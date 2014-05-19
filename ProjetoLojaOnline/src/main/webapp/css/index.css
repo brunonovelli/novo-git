@@ -1,0 +1,99 @@
+
+#bgimage{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:1;
+    height:100%;
+    width:100%
+}
+
+#content{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:70;
+    height:100%;
+    width:100%;
+}
+
+
+
+
+ 
+#menu ul li { display: inline; }
+ 
+#menu ul li a {
+background-color:grey11;
+color: red;
+padding: 30px 70px;
+font: comic-sans;
+}
+ 
+#menu ul li a:hover {
+background-color:white;
+color: red;
+border-bottom:5px solid #EA0000;
+} 
+
+#hide {
+	color:green;
+}
+
+#show {
+	color:green;
+}
+ 
+#barradebusca h1{
+text-align: left;
+text-transform: uppercase;
+font-size: 45px;
+color: red;
+}
+#barradebusca {
+font-size: 15px;
+text-align: right;
+}
+
+h2{
+text-align:center;
+color:red;
+font-size:25px;
+}
+p{
+font-size:20px;
+color:red;
+}
+
+#imagem0 {
+	background-imagem
+}
+
+#imagem{
+position:absolute;
+left:1200px;
+top:400px;
+
+}
+#imagem1{
+position:absolute;
+left:200px;
+top:400px;
+}
+#imagem2{
+position:absolute;
+left:200px;
+top:900px;
+}
+
+#imagem3{
+position:absolute;
+left:1200px;
+top:900px;
+}
+
+td{
+	color:red;
+}
+
+

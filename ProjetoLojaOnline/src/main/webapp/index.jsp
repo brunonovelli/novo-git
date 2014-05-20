@@ -57,7 +57,7 @@
 							</br>
 
 							<div id="imagem">
-								<font align="center" color="red"> <a
+								<font align="center" color="blue"> <a
 									href="comprarps4.jsp"><img src="Imagens/a.png"
 										onMouseOver="this.src='Imagens/f.png'"
 										onMouseOut="this.src='Imagens/a.png'" width="500" height="300"></img></a>

@@ -16,32 +16,36 @@
     height:100%;
     width:100%;
 }
-
-
-
+p a:link, a:hover{
+	color:red;
+	text-decoration:none;	
+}
 
  
 #menu ul li { display: inline; }
  
 #menu ul li a {
-background-color:grey11;
+background-color:black;
 color: red;
 padding: 30px 70px;
-font: comic-sans;
+font: Comics Sans;
+text-decoration: none;
 }
  
 #menu ul li a:hover {
 background-color:white;
-color: red;
+color: black;
 border-bottom:5px solid #EA0000;
 } 
 
 #hide {
-	color:green;
+	color:red;
+	font-size: 0.8em;
 }
 
 #show {
-	color:green;
+	color:red;
+	font-size: 0.8em;
 }
  
 #barradebusca h1{

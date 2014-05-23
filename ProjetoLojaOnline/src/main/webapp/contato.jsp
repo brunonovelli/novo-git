@@ -10,7 +10,7 @@
 		<div class="navbar navbar-inverse">
 			<ul>
 				<li><a href="index.jsp"><i class="icon-home"></i> Home</a></li>
-				<li><a href="carrinho.jsp">Carrrinho</a></li>
+				<li><a href="carrinho.jsp">Carrinho</a></li>
 				<li><a href="pedidos.jsp">Ver Pedidos</a></li>
 				<li><a href="fatura.jsp">Fatura</a></li>
 				<li><a href="loguin.jsp">Login</a></li>
@@ -18,13 +18,13 @@
 			</ul>
 		</div>
 		<p>
-		<a href="#" id="hide">Ocultar a Menu</a> |
-		<a href="#" id="show">Mostrar a Menu</a>
+		<a href="#" id="hide">Ocultar o Menu</a>
+		<a href="#" id="show">Mostrar o Menu</a>
 		</p>
 	</div>
 	<div id="barradebusca">
-		<h1 color="red">Naaky Games</h1>
-		<input type="search" name="googlesearch"><input type="button" class="btn btn-small btn-primary"
+		<h1 id="xxx">Naaky Games</h1>
+		<input type="text" name="googlesearch"><input type="button" class="btn btn-small btn-primary"
 			value="pesquisar"> </br>
 		</br>
 	</div>
@@ -57,74 +57,110 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.js"></script>
 		<script>
-			$('h1').animate({"margin-left" : "+=750"}, 10000);
-			
-			$("h2").mouseover(function(){
-			    $(this).css('color', 'blue');
+			$('#xxx').animate({
+				"margin-left" : "+=800"
+			}, 10000);
+
+			$("h2").mouseover(function() {
+				$(this).css('color', 'black');
 			});
-			$("h2").mouseout(function(){
-			    $(this).css('color', 'red');
+			$("h2").mouseout(function() {
+				$(this).css('color', 'red');
 			});
 
-			$("h1").mouseover(function(){
-			    $(this).css('color', 'green');
+			$("h1").mouseover(function() {
+				$(this).css('color', 'black');
 			});
-			$("h1").mouseout(function(){
-			    $(this).css('color', 'red');
-			});
-
-			$("p").mouseover(function(){
-			    $(this).css('color', 'blue');
-			});
-			$("p").mouseout(function(){
-			    $(this).css('color', 'red');
+			$("h1").mouseout(function() {
+				$(this).css('color', 'red');
 			});
 
-			$(document).ready(function(){
-				$("#hide").click(function(){
-					  $("ul").hide();
+			$("p").mouseover(function() {
+				$(this).css('color', 'black');
+			});
+			$("p").mouseout(function() {
+				$(this).css('color', 'red');
+			});
+
+			$('p').animate({
+				marginLeft : 150
+			}, 200);
+
+			$('p:animated').css({
+				color : "#ff0000"
+			});
+
+			$('p').hover(function() {
+
+				$(this).stop().animate({
+					marginLeft : 20
+				}, 500)
+			},
+
+			function() {
+
+				$(this).stop().animate({
+					marginLeft : 0
+				}, 500);
+
+			});
+
+			$(document).ready(function() {
+				$("#hide").click(function() {
+					$("ul").hide();
+				});
+				$("#show").click(function() {
+					$("ul").show();
+					$('li').animate("slow");
+					slideUp();
+					slideDown();
+				});
+
+				$("#hide").mouseover(function() {
+					$(this).css('color', 'black');
+				});
+				$("#hide").mouseout(function() {
+					$(this).css('color', 'red');
+				});
+				$("#show").mouseover(function() {
+					$(this).css('color', 'black');
+				});
+				$("#show").mouseout(function() {
+					$(this).css('color', 'red');
+				});
+
+				$(document).ready(function() {
+
+					var speedText = 300;
+
+					var speedJump = 200;
+
+					$("#menu").hover(
+
+					function() {
+
+						$(this).next("span").stop().animate({
+							height : "70px",
+						}, speedJump);
+
+						$(this).stop().animate({
+							lineHeight : "40px"
+						}, speedText);
+
+					}, function() {
+
+						$(this).next("span").stop().animate({
+							height : "0px"
+						}, speedJump);
+
+						$(this).stop().animate({
+							lineHeight : "30px"
+						}, speedText);
+
 					});
-					$("#show").click(function(){
-					  $("ul").show();
-					  $('li').animate("slow"); 
-					  slideUp();
-					  slideDown();
-					});
-				
-					$(document).ready(function(){
-					        $('h2').animate({opacity:0.5});
-					       	
-					   });
 
-					$(document).ready(function(){
-
-					     var speedText = 300;
-
-					     var speedJump = 200;
-					     
-
-					     $("#menu").hover(
-
-					           function(){
-
-					                $(this).next("span").stop().animate({ height: "70px", }, speedJump);
-
-					                $(this).stop().animate({ lineHeight:"40px" }, speedText);
-
-					           },function(){
-
-					                $(this).next("span").stop().animate({ height: "0px" }, speedJump);
-
-					                $(this).stop().animate({ lineHeight:"30px" }, speedText);
-
-					           });
-
-					});
+				});
 			});
-					 
-					        
-					        
-				
 		</script>
 
 	</div>

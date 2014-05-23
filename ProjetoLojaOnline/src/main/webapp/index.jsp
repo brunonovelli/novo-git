@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -14,7 +13,7 @@
 	<div>
 		<table cellspacing="0" cellpadding="0">
 			<tr>
-				<td><img id="bgimage" src="Imagens/imagem.jpg" />
+				<td>
 					<div id="content">
 
 
@@ -27,7 +26,7 @@
 							<div class="navbar navbar-inverse">
 								<ul>
 									<li><a href="index.jsp"> Home </a></li>
-									<li><a href="carrinho.jsp"> Carrrinho</a></li>
+									<li><a href="carrinho.jsp"> Carrinho</a></li>
 									<li><a href="pedidos.jsp"> Ver Pedidos</a></li>
 									<li><a href="fatura.jsp"> Fatura</a></li>
 									<li><a href="loguin.jsp">Login</a></li>
@@ -36,15 +35,15 @@
 							</div>
 							<div id="ggg">
 								<p>
-									<a href="#" id="hide">Ocultar a Menu</a> <a href="#" id="show">Mostrar
-										a Menu</a>
+									<a href="#" id="hide">Ocultar o Menu</a> | <a href="#" id="show">Mostrar
+										o Menu</a>
 								</p>
 								</br>
 							</div>
 							<div id="barradebusca">
 								<strong><h1 id="xxx">Naaky Games</h1></strong> <input
-									type="text" id="googlesearch"><input type="button"
-									class="btn btn-small btn-primary" value="pesquisar"> <br /></br>
+									type="text" id="googlesearch"><input type="button" 
+									class="btn btn-small btn-primary" value="Pesquisar"> <br /></br>
 							</div>
 						</div>
 
@@ -53,8 +52,7 @@
 
 						<strong><h2>Produtos</h2></strong>
 						<div>
-							<br /></br>
-							</br>
+							<br /></br> </br>
 
 							<div id="imagem">
 								<font align="center" color="blue"> <a
@@ -104,7 +102,8 @@
 							</div>
 						</div>
 					</div> </font>
-					</div></td>
+					</div>
+				</td>
 			</tr>
 		</table>
 		<script src="js/bootstrap.min.js"></script>
@@ -115,21 +114,21 @@
 			}, 10000);
 
 			$("h2").mouseover(function() {
-				$(this).css('color', 'blue');
+				$(this).css('color', 'black');
 			});
 			$("h2").mouseout(function() {
 				$(this).css('color', 'red');
 			});
 
 			$("h1").mouseover(function() {
-				$(this).css('color', 'green');
+				$(this).css('color', 'black');
 			});
 			$("h1").mouseout(function() {
 				$(this).css('color', 'red');
 			});
 
 			$("p").mouseover(function() {
-				$(this).css('color', 'blue');
+				$(this).css('color', 'black');
 			});
 			$("p").mouseout(function() {
 				$(this).css('color', 'red');
@@ -167,6 +166,19 @@
 					$('li').animate("slow");
 					slideUp();
 					slideDown();
+				});
+
+				$("#hide").mouseover(function() {
+					$(this).css('color', 'black');
+				});
+				$("#hide").mouseout(function() {
+					$(this).css('color', 'red');
+				});
+				$("#show").mouseover(function() {
+					$(this).css('color', 'black');
+				});
+				$("#show").mouseout(function() {
+					$(this).css('color', 'red');
 				});
 
 				$(document).ready(function() {

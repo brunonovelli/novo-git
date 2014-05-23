@@ -193,7 +193,7 @@ th {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -288,12 +288,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color:  #FF0000;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #CD0000;
   text-decoration: underline;
 }
 a:focus {
@@ -508,7 +508,7 @@ a.text-primary:hover {
   color: #3071a9;
 }
 .text-success {
-  color: #3c763d;
+  color:red;
 }
 a.text-success:hover {
   color: #2b542c;

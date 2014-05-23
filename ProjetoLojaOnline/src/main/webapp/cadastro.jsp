@@ -20,13 +20,13 @@
 		</ul>
 		</div>
 		<p>
-		<a href="#" id="hide">Ocultar a Menu</a> |
-		<a href="#" id="show">Mostrar a Menu</a>
+		<a href="#" id="hide">Ocultar o Menu</a> |
+		<a href="#" id="show">Mostrar o Menu</a>
 		</p>
 		</div>
 		<div id="barradebusca">
 		<h1>Naaky Games</h1>
-		<input type="search" name="googlesearch"><input type="button" class="btn btn-small btn-primary" value="pesquisar">
+		<input type="search" name="googlesearch"><input type="button"  class="btn btn-small btn-primary" value="Pesquisar">
 		</br></br>
 		</div>
 <title>Cadastro</title>
@@ -140,28 +140,28 @@ Desejo receber Promoções de ofertas deste Site! </td>
 $('h1').animate( {"margin-left" : "+=750"},10000 );
 	
 $("h2").mouseover(function(){
-    $(this).css('color', 'blue');
+    $(this).css('color', 'black');
 });
 $("h2").mouseout(function(){
     $(this).css('color', 'red');
 });
 
 $("h1").mouseover(function(){
-    $(this).css('color', 'green');
+    $(this).css('color', 'black');
 });
 $("h1").mouseout(function(){
     $(this).css('color', 'red');
 });
 
 $("p").mouseover(function(){
-    $(this).css('color', 'blue');
+    $(this).css('color', 'black');
 });
 $("p").mouseout(function(){
     $(this).css('color', 'red');
 });
 
 $("td").mouseover(function(){
-    $(this).css('color', 'blue');
+    $(this).css('color', 'black');
 });
 $("td").mouseout(function(){
     $(this).css('color', 'red');
